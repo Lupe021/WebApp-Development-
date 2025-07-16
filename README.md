@@ -1,2 +1,2 @@
 # WebApp-Development-
-website applicatoin development projects, writen in HMTL/CSS using visual studio code
+website applicatoin development projects, writen in javascript in HMTL/CSS ran on visual studio code
