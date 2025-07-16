@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Ice Cream Bowl</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>Guadalupe's Ice Cream Shoppe</header>
+    <div class="sundae-container" id="sundae">
+        <!-- Images for sundae layers -->
+         <img src="assets/background.png" id="background" alt="Background">
+         <img src="" id="banana" alt="Banana" style="display: none;">
+         <img src="assets/vanilla_icecream.png" id="icecream" alt="Ice Cream">
+         <img src="" id="sauce" alt="" style="display: none;">
+         <img src="assets/bowl.png" id="bowl" alt="Bowl">
+         <img src="" id="sprinkles" alt="Sprinkles" style="display: none;">
+         <img src="" id="cherry" alt="Cherry" style="display: none;">
+    </div>
+
+    <div class="container">
+        <div>
+            <h3>Choose Your Ice Cream Flavor</h3>
+            <label>
+                <input type="radio" name="flavor" value="vanilla" onclick="updateBowl('icecream', 'vanilla_icecream.png')" checked> Vanilla
+            </label>
+            <label>
+                <input type="radio" name="flavor" value="chocolate" onclick="updateBowl('icecream', 'chocolate_icecream.png')"> Chocolate
+            </label>
+            <label>
+                <input type="radio" name="flavor" value="strawberry" onclick="updateBowl('icecream', 'strawberry_icecream.png')"> Strawberry
+            </label>
+        </div>
+
+        <div>  
+            <h3>Choose Your Sauce</h3>
+            <label>
+                <input type="radio" name="sauce" value="none" onclick="updateBowl('sauce', '')" checked> None
+            </label>
+            <label>
+                <input type="radio" name="sauce" value="chocolate" onclick="updateBowl('sauce', 'chocolate_sauce.png')"> Chocolate Sauce
+            </label>
+            <label>
+                <input type="radio" name="sauce" value="caramel" onclick="updateBowl('sauce', 'caramel_sauce.png')"> Caramel Sauce
+            </label>
+        </div>
+
+        <div>
+            <h3>Add Your Toppings</h3>
+            <label>
+                <input type="checkbox" name="topping" value="banana" onclick="toggleTopping('banana', 'banana.png')"> Banana
+            </label>
+            <label>
+                <input type="checkbox" name="topping" value="sprinkles" onclick="toggleTopping('sprinkles', 'sprinkles.png')"> Sprinkles
+            </label>
+            <label>
+                <input type="checkbox" name="topping" value="cherry" onclick="toggleTopping('cherry', 'cherry.png')"> Cherry
+            </label>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

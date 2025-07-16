@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Pizza</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>Guadalupe's Pizza Shoppe</header>
+
+    <div class="pizza-container" id="pizza">
+        <!--images will be in here-->
+        <img src="assets/crust-regular.png" id="crust" alt="Crust">
+        <img src="assets/sauce-red.png" id="sauce" alt="Sauce">
+        <img src="assets/cheese.png" id="cheese" alt="cheese">
+        <img src="" id="topping-pepperoni" alt="Pepperoni" style="display: none;">
+        <img src="" id="topping-sausage" alt="sausage" style="display: none;">
+        <img src="" id="topping-mushrooms" alt="mushrooms" style="display: none;">
+        <img src="" id="topping-olives" alt="olives" style="display: none;">
+    </div>
+
+    <div class="container">
+        <div>
+            <h3>Choose Your Crust</h3>
+            <label>
+                <input type="radio" name="crust" value="regular" onclick="updatePizza('crust','crust-regular.png')" checked> Regular
+            </label>
+            <label>
+                <input type="radio" name="crust" value="thin" onclick="updatePizza('crust','crust-thin.png')"> Thin
+            </label>
+            <label>
+                <input type="radio" name="crust" value="stuffed" onclick="updatePizza('crust','crust-stuffed.png')"> Stuffed
+            </label>
+        </div>
+
+        <div>
+            <h3>Choose Your Sauce</h3>
+            <label>
+                <input type="radio" name="Sauce" value="tomato" onclick="updatePizza('sauce', 'sauce-red.png')" checked> Tomato Sauce
+            </label>
+            <label>
+                <input type="radio" name="Sauce" value="white" onclick="updatePizza('sauce', 'sauce-white.png')"> White Sauce
+            </label>
+        </div>
+
+        <div>
+            <h3>Add Your Toppings</h3>
+            <label>
+                <input type="checkbox" name="toppings" value="pepperoni" onclick="toggleToppings('toppings-pepperoni', 'pepperoni.png')"> Pepperoni
+            </label>
+            <label>
+                <input type="checkbox" name="toppings" value="sausage" onclick="toggleToppings('toppings-sausage', 'sausage.png')"> Sausage
+            </label>
+            <label>
+                <input type="checkbox" name="toppings" value="mushrooms" onclick="toggleToppings('toppings-mushrooms', 'mushrooms.png')"> Mushrooms
+            </label>
+            <label>
+                <input type="checkbox" name="toppings" value="olives" onclick="toggleToppings('toppings-olives', 'olives.png')"> Olives
+            </label>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

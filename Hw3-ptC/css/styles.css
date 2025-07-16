@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, sems-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+header{
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 0;
+    font-size: 2cm;
+}
+.pizza-container{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+.pizza-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container{
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.container h3{
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+}
